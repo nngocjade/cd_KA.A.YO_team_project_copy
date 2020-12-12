@@ -4,9 +4,27 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+      integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
+      crossorigin="anonymous"
+    />
+
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://use.fontawesome.com/003643b3a5.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Antic+Didone&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="section2.css" />
-    <!-- GOOGLE FONTS -->
     <link
       href="https://fonts.googleapis.com/css2?family=Sulphur+Point:wght@300;400;700&display=swap"
       rel="stylesheet"
@@ -16,20 +34,58 @@
     <!-- Navbar for Katie -->
     <nav>
       <div class="container">
-        <ul>
-          <li>Logo</li>
-          <li>Shop All</li>
-          <li>For Body</li>
-          <li>For Home</li>
-          <li>About</li>
-          <li>Contact</li>
-        </ul>
-        <ul>
-          <li>Log in</li>
-          <li>Cart</li>
-        </ul>
+        <img src="images/logo.png" alt="logo" />
+        <a href="#section4"> SHOP ALL </a>
+        <a href="#"> FOR BODY </a>
+        <a href="#"> FOR FACE </a>
+        <a href="#"> ABOUT </a>
+        <a href="#"> CONTACT </a>
+        <a href="#"><i class="fa fa-shopping-cart"></i> CART</a>
       </div>
     </nav>
+
+    <!-- Carousel for Katie -->
+    <section class="section0">
+      <div class="carousel">
+        <button class="carousel-btn cbtn--left is-hidden">
+          <img src="images/back.svg " />
+        </button>
+        <div class="carousel-container">
+          <ul class="carousel-track">
+            <li class="carousel_slide current-picture">
+              <img
+                class="carousel-imgs"
+                src="https://images.unsplash.com/photo-1548110579-405ee7448814?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTJ8fHNwYXxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                alt=""
+              />
+            </li>
+            <li class="carousel_slide">
+              <img
+                class="carousel-imgs"
+                src="https://i.pinimg.com/originals/c2/f7/a0/c2f7a09510283d3034edfd21b6c709b4.png"
+                alt=""
+              />
+            </li>
+            <li class="carousel_slide">
+              <img
+                class="carousel-imgs"
+                src="https://images.unsplash.com/photo-1548110579-405ee7448814?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTJ8fHNwYXxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                alt=""
+              />
+            </li>
+          </ul>
+        </div>
+        <button class="carousel-btn cbtn--right">
+          <img src="images/next.svg " />
+        </button>
+        <div class="carousel_nav">
+          <button class="indicator current-picture"></button>
+          <button class="indicator"></button>
+          <button class="indicator"></button>
+        </div>
+      </div>
+    </section>
+
     <!-- section 1 for Prince -->
     <section id="section1">
       <div class="container">JUST like nature intended</div>
@@ -74,39 +130,101 @@
       <div class="container">Naturally simple</div>
     </section>
     <section id="section4">
-      <div class="container">#frais</div>
-    </section>
-    <!-- Footer for Julien -->
-    <footer>
       <div class="container">
+        <div class="brand-name">#KAYYO</div>
+        <div class="soap-pic">
+          <img
+            src="https://www.fairmont.com/assets/0/104/3477/3482/3955/3963/fceaaf23-3a44-4d6b-b06b-a4b25d319f7c.jpg"
+            alt=""
+          />
+          <img
+            src="https://images.unsplash.com/photo-1548110579-405ee7448814?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTJ8fHNwYXxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+            alt=""
+          />
+          <img
+            src="https://images.unsplash.com/photo-1600857544200-b2f666a9a2ec?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8c29hcHxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+            alt=""
+          />
+          <img
+            src="https://images.unsplash.com/photo-1584305574620-2aab80eedfe6?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTF8fHNvYXB8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+            alt=""
+          />
+          <img
+            src="https://images.unsplash.com/photo-1603786996259-3b35ca3f890e?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTR8fHNvYXB8ZW58MHx8MHw%3D&auto=format&fit=crop&w=500&q=60"
+            alt=""
+          />
+          <img
+            src="https://images.unsplash.com/photo-1607006344336-55d6e178f017?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MjF8fHNvYXB8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+            alt=""
+          />
+          <img
+            src="https://i.pinimg.com/originals/51/3f/85/513f855e95bb2ee01370ba913e68cf19.jpg"
+            alt=""
+          />
+          <img
+            src="https://i.pinimg.com/originals/c2/f7/a0/c2f7a09510283d3034edfd21b6c709b4.png"
+            alt=""
+          />
+          <img
+            src="https://previews.123rf.com/images/marrakeshh/marrakeshh1907/marrakeshh190700009/127868089-natural-handmade-soap-bars-with-organic-medicinal-plants-and-flowers-homemade-beauty-products-with-n.jpg"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
+
+    <section id="contact-us"></section>
+    <!-- Footer for Julien -->
+    <footer id="footer">
+      <div class="container footer-layout">
         <dl>
-          <dt>Frais</dt>
-          <dd></dd>
-          <dd></dd>
-          <dd></dd>
-          <dd></dd>
-          <dd></dd>
+          <dt>KA.A.YO</dt>
+          <dd>Shop All</dd>
+          <dd>For Body</dd>
+          <dd>For Home</dd>
+          <dd>About</dd>
+          <dd>Contact</dd>
         </dl>
         <dl>
           <dt>Help</dt>
-          <dd></dd>
-          <dd></dd>
-          <dd></dd>
-          <dd></dd>
+          <dd>Shipping And Returns</dd>
+          <dd>Store Policy</dd>
+          <dd>Payment Methods</dd>
+          <dd>FAQ</dd>
         </dl>
         <dl>
           <dt>Contact</dt>
-          <dd></dd>
-          <dd></dd>
-          <dd></dd>
+          <dd>123-456-7890</dd>
+          <dd>
+            <a class="footer-email-link" href="mailto:INFO@MY-DOMAIN.COM"
+              >INFO@MY-DOMAIN.COM</a
+            >
+          </dd>
+          <dd class="dd-social-icons">
+            <a class="footer-social-icons" href=""
+              ><i class="fab fa-instagram"></i>
+            </a>
+            <a class="footer-social-icons" href=""
+              ><i class="fab fa-facebook"></i>
+            </a>
+            <a class="footer-social-icons" href=""
+              ><i class="fab fa-twitter"></i>
+            </a>
+          </dd>
         </dl>
         <dl>
           <dt>Newsletter</dt>
-          <dd></dd>
-          <dd></dd>
-          <dd></dd>
+          <dd>Enter email *</dd>
+          <input
+            type="email"
+            name="Email"
+            id="footer-email"
+            placeholder="Email"
+          />
+          <a class="footer-subscribe-link" href="">Subscribe</a>
         </dl>
       </div>
     </footer>
+    <script src="carousel.js"></script>
   </body>
 </html>

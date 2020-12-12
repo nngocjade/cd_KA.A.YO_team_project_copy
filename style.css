@@ -6,16 +6,168 @@
   --color-link-footer: #8f8f8f;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   padding: 0;
+  font-family: "Antic Didone", serif;
 }
 
 * {
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+}
+
 .container {
-  max-width: 1140px;
+  max-width: 1040px;
   margin: 0 auto;
+}
+
+.footer-layout {
+  display: flex;
+  justify-content: space-evenly;
+  border-top: solid 2px var(--color-border);
+  letter-spacing: 3px;
+img {
+  height: 100px;
+  width: 100px;
+}
+
+nav {
+  background-color: white;
+}
+
+nav > .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-transform: uppercase;
+  margin: 40px 30px 0 30px;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+}
+
+nav > .container * {
+  text-decoration: none;
+  color: #424242;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+}
+.carousel {
+  position: relative;
+  height: 600px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.carousel-imgs {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.carousel-container {
+  background: lightgreen;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel-track {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  transition: transform 550ms ease-out;
+}
+
+.footer-subscribe-link {
+  background-color: #576855;
+  border-radius: 0;
+  min-width: 300px;
+  margin-top: 8px;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  font-weight: 700;
+  padding: 5px 0;
+  transition: 150ms all ease-out;
+  letter-spacing: 4px;
+.carousel_slide {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.cbtn--left {
+  left: -35px;
+}
+
+.cbtn--right {
+  right: -35px;
+}
+
+.carousel-btn img {
+  width: 20px;
+  border: 0;
+}
+
+.carousel_nav {
+  width: 100%;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 4%;
+}
+
+.indicator {
+  height: 3px;
+  width: 50px;
+  margin: 0 20px;
+  background-color: rgba(0, 0, 0, 0.3);
+  border: 0;
+  border-radius: 30%;
+  cursor: pointer;
+}
+
+.current-picture {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.is-hidden {
+  display: none;
+}
+
+}
+
+.footer-social-icons {
+  color: var(--color-subtitle);
+  font-size: 16px;
+}
+
+.dd-social-icons {
+  display: flex;
+  justify-content: space-evenly;
 }
