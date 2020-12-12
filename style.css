@@ -1,0 +1,21 @@
+:root {
+  --color-title: #576855;
+  --color-border: #424242;
+  --color-subtitle: #424242;
+  --color-link-header: #808080;
+  --color-link-footer: #8f8f8f;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}

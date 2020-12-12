@@ -1,0 +1,154 @@
+/* font weight options */
+/* 300, 400, 700  */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Sulphur Point", sans-serif;
+  width: 100vw;
+  height: 100vh;
+}
+
+/* ========================================================
+                      SECTION 2
+==========================================================*/
+#section2 {
+  width: 100%;
+  /* background-color: linen; */
+  margin: 2rem auto;
+  display: flex;
+  align-items: center;
+}
+
+#section2 .container {
+  width: 1000px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#section2 .box-content.wrapper {
+  width: 100%;
+}
+
+#section2 .row {
+  width: 100%;
+  height: 25em;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+
+#section2 .row.two {
+  position: relative;
+  justify-content: flex-end;
+}
+
+#section2 .row .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 2rem 4rem;
+}
+
+#section2 .row.one .content {
+  flex-basis: 40%;
+  text-align: right;
+  align-items: flex-end;
+}
+
+#section2 .row.two .content {
+  flex-basis: 44.6%;
+  text-align: left;
+  align-items: flex-start;
+  height: 25em;
+  z-index: 1;
+  background-color: rgba(211, 211, 211, 0.322);
+  box-shadow: 4px -1px 15px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* -------------IMAGE--------------- */
+
+#section2 .image {
+  background-size: cover;
+  background-repeat: none;
+  background-position: center;
+}
+#section2 .row.one .image {
+  width: 60%;
+  height: 100%;
+  background-image: url("/images/pinkSoapBar.jpg");
+}
+
+#section2 .row.two .top.image {
+  width: 75%;
+  height: 100%;
+  background-image: url("https://static.wixstatic.com/media/86cb94_6ae9bd35030b458d85b39ee6fe9b7f09~mv2_d_5450_3633_s_4_2.jpg/v1/crop/x_874,y_0,w_3703,h_3633/fill/w_742,h_720,al_c,q_85,usm_0.66_1.00_0.01/GettyImages-818735824.webp");
+  position: absolute;
+  left: 0;
+  box-shadow: 4px -1px 15px 5px rgba(0, 0, 0, 0.1);
+}
+
+#section2 .row .bottom.image {
+  width: 50%;
+  height: 110%;
+  background-color: lightgray;
+  background-size: cover;
+  background-repeat: none;
+  background-position: right;
+  opacity: 50%;
+  position: absolute;
+  top: -4rem;
+  right: -3rem;
+  z-index: -1;
+}
+
+/* --------------TEXT---------------- */
+#section2 .title {
+  font-size: 3rem;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+  margin: 1rem 0;
+  color: var(--color-title);
+  font-weight: 700;
+}
+
+#section2 .row .sub.title {
+  font-size: 1.5rem;
+  letter-spacing: 5px;
+  color: var(--color-subtitle);
+}
+
+/*---------------BUTTON--------------- */
+
+#section2 button {
+  width: 55%;
+  border: 5px solid var(--color-subtitle);
+  color: var(--color-subtitle);
+  background-color: transparent;
+  padding: 1rem 0.5rem;
+  margin: 2rem 0;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+#section2 button:hover {
+  color: white;
+  transition-duration: 0.4s;
+}
+
+#section2 #candleBtn:hover {
+  background-color: #406401;
+  border: 5px solid #406401;
+}
+
+#section2 #soapBtn:hover {
+  background-color: #c85f8c;
+  border: 5px solid #c85f8c;
+}
