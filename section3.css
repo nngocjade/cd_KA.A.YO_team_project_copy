@@ -1,0 +1,143 @@
+/* ========================================================
+                        SECTION 3
+==========================================================*/
+#section3 {
+  width: 100%;
+  /* background-color: linen; */
+  margin: 2rem auto;
+  display: flex;
+  align-items: center;
+}
+
+#section3 .container {
+  width: 1000px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 2rem;
+}
+
+#section3 .row {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 0 2.5rem 0;
+}
+
+#section3 .row.two {
+  height: 35em;
+  position: relative;
+  justify-content: space-between;
+}
+
+/* ========================================================
+                       TEXT
+==========================================================*/
+
+#section3 .title {
+  font-size: 3rem;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+  margin: 1rem 0;
+  color: var(--color-title);
+  font-weight: 700;
+}
+
+#section3 .row.one #description {
+  font-size: 1.5rem;
+  letter-spacing: 0.05em;
+  line-height: 2.5rem;
+  text-align: justify; /* centers the paragraph evenly spaced out */
+}
+
+#section3 .row.two .content {
+  flex-basis: 35%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 3rem 0;
+  color: #748572;
+  letter-spacing: 0.05em;
+  line-height: 1.5rem;
+  font-size: 1.2rem;
+}
+
+#section3 .row.two blockquote {
+  height: 11em;
+  background-color: white;
+  /* background-color: rgba(255, 255, 255, 0.692); */
+  box-shadow: 1px 1px 15px 2px rgba(0, 0, 0, 0.1);
+  font-style: italic;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  padding: 0 1.5rem;
+}
+#section3 .row.two #author {
+  padding: 1.5rem;
+  background-color: white;
+  box-shadow: 2px -2px 15px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* #section3 .row.two blockquote::before {
+  content: "";
+  width: 22em;
+  height: 22em;
+  position: absolute;
+  background-color: lightgray;
+  box-shadow: 4px -1px 15px 5px rgba(0, 0, 0, 0.1);
+  opacity: 50%;
+  left: 1rem;
+  bottom: -7.5rem;
+  z-index: -1;
+} */
+/* ========================================================
+                         IMAGE
+==========================================================*/
+#section3 .image {
+  background-size: cover;
+  background-repeat: none;
+  background-position: center;
+}
+#section3 .row.two .image {
+  z-index: -2;
+  flex-basis: 60%;
+  height: 100%;
+  background-image: url("https://static.wixstatic.com/media/86cb94_8a3de89fe3cc4e15b70e1cb06cbb73c1~mv2_d_3938_4972_s_4_2.jpg/v1/crop/x_330,y_1411,w_3608,h_3121/fill/w_722,h_624,al_c,q_85,usm_0.66_1.00_0.01/alex-loup-393839-unsplash(hand)2.webp");
+  /* box-shadow: -4px 1px 10px 1px rgba(0, 0, 0, 0.1); */
+}
+
+/* ========================================================
+                       BUTTON
+==========================================================*/
+#section3 button {
+  border: 5px solid var(--color-subtitle);
+  color: var(--color-subtitle);
+  background-color: transparent;
+  padding: 1rem 0.5rem;
+  margin: 2rem 0;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+#section3 button:hover {
+  color: white;
+  transition-duration: 0.4s;
+  box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.24);
+  border-radius: 10px;
+}
+
+#section3 #learnMoreBtn:hover {
+  background-color: #406401;
+  border: 5px solid #406401;
+}
+
+#section3 #learnMoreBtn {
+  width: 20%;
+  position: absolute;
+  bottom: 4em;
+  left: 17.5em;
+}
